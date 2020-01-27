@@ -1,0 +1,41 @@
+.switch {
+    position: relative;
+}
+
+.switch-label {
+    background-color: #ededed;
+    border-radius: 30px;
+    border: 2px solid #dddddd;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    width: 55px;
+}
+
+.switch-label:before {
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    content: ' ';
+    height: 24px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: all 0.3s ease-in 0s;
+    width: 24px;
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch-input:checked + .switch-label {
+    background-color: transparent;
+}
+
+.switch-input:checked + .switch-label:before {
+    background-color: dodgerblue;
+}
+
+.switch-input:checked + .switch-label:before {
+    left: 31px;
+}

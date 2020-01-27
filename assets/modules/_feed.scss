@@ -1,0 +1,37 @@
+.feed > div:first-child {
+    align-items: flex-start;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 400ms ease-in-out;
+}
+
+.feed > div:first-child:hover {
+    background: #fcfcfc;
+    cursor: pointer;
+}
+
+.feed + .feed {
+    margin-top: 5px;
+}
+
+.feed-trigger {
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.feed-title {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.mix-feed_isError .feed-title {
+    background-color: rgba(254, 195, 195, 0.65);
+    font-weight: 600;
+}
+
+.mix-feed_isWarning .feed-title {
+    background-color: rgba(254, 207, 109, 0.25);
+    font-weight: 500;
+}
