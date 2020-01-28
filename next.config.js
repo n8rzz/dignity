@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const path = require('path');
 const withStyles = require('@webdeb/next-styles');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
