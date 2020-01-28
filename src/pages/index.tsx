@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import { FEEDS } from '../stores/feed/feed.constant';
 import { getFeedList } from '../stores/feed/feed.service';
 import { IFeed } from '../stores/feed/models/i-feed';
+import withAuth from '../components/auth/withAuth';
 
 type Props = {
     feedList: IFeed[];
@@ -30,4 +31,4 @@ IndexPage.getInitialProps = async () => {
     };
 };
 
-export default IndexPage;
+export default withAuth(IndexPage);
