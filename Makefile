@@ -12,3 +12,7 @@ container-run: ## runs a container, expects `v=` for versions number
 start-dev:
 	npm run build
 	NODE_ENV=development node ./server.js
+
+start-prod:
+	npm run build
+	NODE_ENV=production node ./server.js
