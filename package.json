@@ -18,7 +18,7 @@
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "express-session": "^1.17.0",
-    "firebase-admin": "^8.9.2",
+    "firebase-admin": "^11.4.1",
     "isomorphic-unfetch": "3.0.0",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
